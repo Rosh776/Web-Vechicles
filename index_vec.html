@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature's Canvas</title>
+    <title>Auto Lens</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --bg-color: #fafafa;
             --text-color: #262626;
-            --primary-color: #2ecc71;
+            --primary-color: #3498db;
             --secondary-color: #8e8e8e;
             --border-color: #dbdbdb;
             --card-bg: #ffffff;
@@ -20,7 +20,7 @@
         .dark-mode {
             --bg-color: #1a1a2e;
             --text-color: #f0f0f0;
-            --primary-color: #27ae60;
+            --primary-color: #2980b9;
             --secondary-color: #a8a8a8;
             --border-color: #363636;
             --card-bg: #252547;
@@ -70,7 +70,7 @@
         .logo {
             font-size: 24px;
             font-weight: bold;
-            background: linear-gradient(45deg, #2ecc71, #3498db, #e74c3c, #f1c40f);
+            background: linear-gradient(45deg, #3498db, #2c3e50, #9b59b6);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -171,7 +171,7 @@
             object-fit: cover;
             margin-right: 30px;
             border: 3px solid var(--primary-color);
-            box-shadow: 0 0 20px rgba(46, 204, 113, 0.3);
+            box-shadow: 0 0 20px rgba(52, 152, 219, 0.3);
             cursor: pointer;
             transition: all 0.3s ease;
             position: relative;
@@ -228,7 +228,7 @@
         .profile-bio h1 {
             font-size: 28px;
             margin-bottom: 10px;
-            background: linear-gradient(45deg, #2ecc71, #3498db, #e74c3c, #f1c40f);
+            background: linear-gradient(45deg, #3498db, #2c3e50, #9b59b6);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -435,14 +435,14 @@
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            background: linear-gradient(45deg, #2ecc71, #3498db, #e74c3c, #f1c40f);
+            background: linear-gradient(45deg, #3498db, #2c3e50, #9b59b6);
             color: white;
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 24px;
             cursor: pointer;
-            box-shadow: 0 4px 20px rgba(46, 204, 113, 0.4);
+            box-shadow: 0 4px 20px rgba(52, 152, 219, 0.4);
             z-index: 100;
             border: none;
             transition: all 0.3s ease;
@@ -458,7 +458,7 @@
 
         .theme-toggle:hover {
             transform: scale(1.1) translateY(-5px);
-            box-shadow: 0 8px 30px rgba(46, 204, 113, 0.6);
+            box-shadow: 0 8px 30px rgba(52, 152, 219, 0.6);
         }
 
         @keyframes float {
@@ -482,9 +482,9 @@
         .spinner {
             width: 40px;
             height: 40px;
-            border: 4px solid rgba(46, 204, 113, 0.1);
+            border: 4px solid rgba(52, 152, 219, 0.1);
             border-radius: 50%;
-            border-top-color: #2ecc71;
+            border-top-color: #3498db;
             animation: spin 1s linear infinite;
         }
 
@@ -622,7 +622,7 @@
     <!-- Header -->
     <header id="mainHeader">
         <div class="header-container">
-            <div class="logo">Nature's Canvas</div>
+            <div class="logo">Auto Lens</div>
             
             <div class="header-stats">
                 <div class="stat" id="postsStat">
@@ -653,7 +653,7 @@
         <!-- Profile Section -->
         <section class="profile-section">
             <div class="profile-pic-container">
-                <img src="" alt="Random Nature" class="profile-pic" id="randomProfilePic">
+                <img src="" alt="Random Vehicle" class="profile-pic" id="randomProfilePic">
                 <div class="profile-pic-nav">
                     <button class="profile-pic-nav-btn" id="profilePicHomeBtn"><i class="fas fa-home"></i></button>
                     <button class="profile-pic-nav-btn" id="profilePicNextBtn"><i class="fas fa-arrow-right"></i></button>
@@ -662,8 +662,8 @@
             
             <div class="profile-info">
                 <div class="profile-bio">
-                    <h1>Nature's Wonders</h1>
-                    <p>Capturing the beauty of our natural world</p>
+                    <h1>Auto Vision</h1>
+                    <p>Capturing the beauty and power of vehicles from around the world</p>
                 </div>
             </div>
         </section>
@@ -708,36 +708,36 @@
             currentImageIndex: 0,
             likedImages: new Set(),
             captions: [
-                "In every walk with nature one receives far more than he seeks.",
-                "The clearest way into the Universe is through a forest wilderness.",
-                "Nature does not hurry, yet everything is accomplished.",
-                "Look deep into nature, and then you will understand everything better.",
-                "The earth has music for those who listen.",
-                "Adopt the pace of nature: her secret is patience.",
-                "Nature is not a place to visit. It is home.",
-                "To sit in the shade on a fine day and look upon verdure is the most perfect refreshment.",
-                "The poetry of the earth is never dead.",
-                "Study nature, love nature, stay close to nature. It will never fail you.",
-                "Nature always wears the colors of the spirit.",
-                "There is something infinitely healing in the repeated refrains of nature.",
-                "The richness I achieve comes from Nature, the source of my inspiration.",
-                "Nature is the art of God.",
-                "Wilderness is not a luxury but a necessity of the human spirit.",
-                "The mountains are calling and I must go.",
-                "In nature, nothing is perfect and everything is perfect.",
-                "Keep close to Nature's heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean.",
-                "Nature is pleased with simplicity.",
-                "The world is big and I want to have a good look at it before it gets dark.",
-                "I go to nature to be soothed and healed, and to have my senses put in order.",
-                "Nature is the source of all true knowledge.",
-                "The more tranquil a man becomes, the greater is his success, his influence, his power for good. Calmness of mind is one of the beautiful jewels of wisdom.",
-                "Choose only one master—nature.",
-                "The sun does not shine for a few trees and flowers, but for the wide world's joy.",
-                "Nature is our kindest friend and best critic in experimental science.",
-                "There are always flowers for those who want to see them.",
-                "The silence of nature is very real. It surrounds you...you can feel it.",
-                "Nature is the best medicine for the soul.",
-                "The beauty of the natural world lies in the details."
+                "The car has become an article of dress without which we feel uncertain, unclad, and incomplete.",
+                "What's behind you doesn't matter. It's what's in front of you that counts.",
+                "Life is too short to drive boring cars.",
+                "The perfect car is the one that makes you look back at it every time you park.",
+                "Cars are the sculptures of our everyday lives.",
+                "A car is not just a means of transportation, it's a statement of who you are.",
+                "The best therapy is driving a car you love on a road you enjoy.",
+                "Speed has never killed anyone. Suddenly becoming stationary, that's what gets you.",
+                "The only way to discover the limits of the possible is to go beyond them into the impossible.",
+                "Racing is life. Anything before or after is just waiting.",
+                "The most beautiful thing in the world is a car that runs perfectly.",
+                "Driving is not about the destination, it's about the journey.",
+                "A car is the closest thing we will ever have to a magic carpet.",
+                "The sound of a car's engine is the soundtrack of freedom.",
+                "Cars are like art, they should provoke emotions.",
+                "The best way to predict the future is to invent it behind the wheel.",
+                "A car is freedom, independence, and the open road.",
+                "The world's best antidepressant is a car with a full tank of gas.",
+                "Cars are the ultimate mobile devices.",
+                "The difference between men and boys is the price of their toys.",
+                "Automobiles are not merely machines, they are expressions of human passion.",
+                "The car is the modern equivalent of the great Gothic cathedrals.",
+                "A car is the only place where you can be completely alone with your thoughts.",
+                "The steering wheel is the best place to hold a conversation.",
+                "Cars are the perfect blend of art and science.",
+                "The road is a canvas, and the car is the brush.",
+                "A car is a passport to adventure.",
+                "The best ideas come while driving alone in a car.",
+                "Cars are time machines that take us forward to new destinations.",
+                "The automobile is the secular sanctuary for the individual."
             ],
             isLoading: true,
             randomProfilePicUrl: '',
@@ -806,11 +806,11 @@
             });
             
             footerPrevBtn.addEventListener('click', function() {
-                window.location.href = "https://rosh776.github.io/Web-Macro/";
+                window.location.href = "https://rosh776.github.io/Web-Animals/";
             });
             
             footerNextBtn.addEventListener('click', function() {
-                window.location.href = "https://rosh776.github.io/Web-Animals/";
+                window.location.href = "https://rosh776.github.io/Web-Potrait/";
             });
             
             // Like button event listeners
@@ -844,7 +844,7 @@
         async function fetchGitHubImages() {
             try {
                 const owner = 'Rosh776';
-                const repo = 'nature-database';
+                const repo = 'vechicles';
                 
                 // GitHub API endpoint
                 const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/`;
@@ -869,11 +869,11 @@
                 state.isLoading = false;
             } catch (error) {
                 console.error('Error fetching images:', error);
-                // Fallback to nature images if API fails
+                // Fallback to vehicle images if API fails
                 state.images = Array(12).fill().map((_, i) => ({
-                    url: `https://source.unsplash.com/random/600x600/?nature,landscape,${i}`,
-                    thumbnail: `https://source.unsplash.com/random/300x300/?nature,landscape,${i}`,
-                    name: `nature-${i}.jpg`
+                    url: `https://source.unsplash.com/random/600x600/?car,vehicle,automobile,${i}`,
+                    thumbnail: `https://source.unsplash.com/random/300x300/?car,vehicle,automobile,${i}`,
+                    name: `vehicle-${i}.jpg`
                 }));
                 postsStat.querySelector('.stat-value').textContent = state.images.length;
                 renderGallery();
@@ -987,7 +987,7 @@
                 themeToggle.style.background = 'linear-gradient(45deg, #1a1a2e, #252547)';
             } else {
                 themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-                themeToggle.style.background = 'linear-gradient(45deg, #2ecc71, #3498db, #e74c3c, #f1c40f)';
+                themeToggle.style.background = 'linear-gradient(45deg, #3498db, #2c3e50, #9b59b6)';
                 themeToggle.style.animation = 'float 6s ease-in-out infinite, gradientBG 8s ease infinite';
             }
         }
